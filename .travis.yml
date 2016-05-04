@@ -4,6 +4,9 @@ scala:
 jdk:
 - oraclejdk8
 sudo: false
+before_install:
+  - find $HOME/.sbt -name "*.lock" -type f -print
+  - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f
 cache:
   directories:
   - $HOME/.sbt/0.13
