@@ -15,6 +15,7 @@ cache:
   - $HOME/.sbt/launchers
   - $HOME/.ivy2
   edge: true
+  timeout: 1800
 before_cache:
   - du -h -d 1 $HOME/.ivy2/
   - du -h -d 2 $HOME/.sbt/
