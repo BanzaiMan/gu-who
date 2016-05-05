@@ -24,4 +24,3 @@ before_cache:
   - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f -print -delete | sort | tee -a $HOME/properties_after
   - sdiff -w 500 $HOME/locks_before $HOME/locks_after
   - sdiff -w 500 $HOME/properties_before $HOME/properties_after
-  - sleep 300 # sleep a lot
