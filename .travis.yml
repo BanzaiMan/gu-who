@@ -3,7 +3,9 @@ scala:
 - 2.11.7
 jdk:
 - oraclejdk8
-sudo: false
+sudo: required
+dist: trusty
+
 before_install:
   - find $HOME/.sbt -name "*.lock" -type f -print | sort | tee $HOME/locks_before
   - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f | sort | tee $HOME/properties_before
